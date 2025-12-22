@@ -1,20 +1,29 @@
-// Smooth scroll + reveal
-const reveals = document.querySelectorAll(".reveal");
+// Year
+document.getElementById("year").textContent = new Date().getFullYear();
 
-function reveal() {
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add("active");
-    }
-  });
-}
-window.addEventListener("scroll", reveal);
-reveal();
-
-// Theme toggle
+// Theme toggle (starts light like julius.fm vibe)
 const btn = document.getElementById("themeToggle");
+const saved = localStorage.getItem("theme");
+
+if (saved === "dark") document.body.classList.add("dark");
+
 btn.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  btn.textContent = document.body.classList.contains("light") ? "🌙" : "☀️";
+  document.body.classList.toggle("dark");
+  localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
 });
+
+// Active nav link (simple)
+const links = document.querySelectorAll(".nav__link");
+const sections = ["about","work","more"].map(id => document.getElementById(id));
+
+const onScroll = () => {
+  const y = window.scrollY + 110;
+  let current = "about";
+  for (const s of sections) {
+    if (s && s.offsetTop <= y) current = s.id;
+  }
+  links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current));
+};
+
+window.addEventListener("scroll", onScroll);
+onScroll();
