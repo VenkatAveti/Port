@@ -1,39 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venkatrao Aveti | Senior Software Engineer</title>
+
+  <!-- ATS-friendly meta -->
+  <meta name="description" content="Senior Software Engineer with 8+ years experience in Java, Spring Boot, Microservices, AWS, Azure, Kubernetes, CI/CD.">
+  <meta name="keywords" content="Java Developer, Spring Boot, Microservices, AWS, Azure, Kubernetes, Software Engineer">
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav>
-    <a href="#top">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <h2 class="logo">Venkat</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
   </nav>
 
-  <header id="top">
-    <h1>Your Name</h1>
-    <p>Full Stack Developer</p>
+  <!-- Hero -->
+  <header class="hero reveal">
+    <h1>Venkatrao Aveti</h1>
+    <p>Senior Software Engineer | Java | Spring Boot | Cloud | Microservices</p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Hire Me</a>
+      <a href="Venkatrao_Aveti_Resume.pdf" class="btn outline" download>
+        Download Resume
+      </a>
+    </div>
   </header>
 
-  <section id="about">
+  <!-- About -->
+  <section id="about" class="section reveal">
     <h2>About Me</h2>
-    <p>Write about your experience and skills.</p>
+    <p>
+      Senior Software Engineer with 8+ years of experience delivering scalable,
+      secure, and cloud-native applications. Expertise in Java, Spring Boot,
+      Microservices, AWS, Azure, Kubernetes, and CI/CD pipelines.
+    </p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>List your projects here.</p>
+  <!-- Skills -->
+  <section id="skills" class="section dark reveal">
+    <h2>Core Skills</h2>
+    <div class="skills-grid">
+      <span>Java (8–21)</span>
+      <span>Spring Boot</span>
+      <span>Microservices</span>
+      <span>REST & GraphQL</span>
+      <span>Kafka</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>AWS</span>
+      <span>Azure</span>
+      <span>Terraform</span>
+      <span>CI/CD</span>
+      <span>Angular & React</span>
+    </div>
   </section>
 
-  <section id="contact">
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Key Projects</h2>
+
+    <article class="card">
+      <h3>Healthcare Microservices Platform</h3>
+      <p>
+        Designed and developed Spring Boot microservices processing
+        high-volume healthcare data using Kafka, AWS, and Kubernetes.
+        Improved system scalability and reduced deployment time by 40%.
+      </p>
+      <p class="tech">Tech: Java, Spring Boot, Kafka, AWS, Docker, Kubernetes</p>
+    </article>
+
+    <article class="card">
+      <h3>University Data Management System</h3>
+      <p>
+        Built REST APIs and Angular UI for academic and administrative workflows.
+        Implemented CI/CD pipelines and observability using Prometheus and Grafana.
+      </p>
+      <p class="tech">Tech: Java, Spring Boot, Angular, AWS, CI/CD</p>
+    </article>
+
+    <article class="card">
+      <h3>Banking Web Application</h3>
+      <p>
+        Developed secure React applications and backend APIs with OAuth2 and JWT,
+        supporting high-volume financial transactions.
+      </p>
+      <p class="tech">Tech: React, Java, Spring Boot, PostgreSQL</p>
+    </article>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section dark reveal">
+    <h2>Professional Experience</h2>
+
+    <article class="card">
+      <h3>Software Engineer – Optum (UHG)</h3>
+      <p class="date">Nov 2023 – Present</p>
+      <ul>
+        <li>Built Spring Boot 3.x microservices using Java 11/19</li>
+        <li>Implemented Kafka-based event-driven architecture</li>
+        <li>Deployed applications on AWS EKS with CI/CD automation</li>
+        <li>Integrated Angular UI with REST and GraphQL APIs</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Java Developer – Texas A&M University</h3>
+      <p class="date">Mar 2022 – Oct 2023</p>
+      <ul>
+        <li>Developed REST APIs using Spring Boot and Hibernate</li>
+        <li>Built JSP & Angular frontends</li>
+        <li>Implemented monitoring using Prometheus and Grafana</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
     <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+    <p>Email: <a href="mailto:avetivenkat@gmail.com">avetivenkat@gmail.com</a></p>
+    <p>Phone: +1 (361) 688-4882</p>
+    <p>
+      LinkedIn:
+      <a href="https://linkedin.com/in/venkat-649105283" target="_blank">
+        linkedin.com/in/venkat-649105283
+      </a>
+    </p>
   </section>
+
+  <footer>
+    <p>© 2025 Venkatrao Aveti</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
