@@ -1,29 +1,38 @@
-// Year
+// Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Theme toggle (starts light like julius.fm vibe)
-const btn = document.getElementById("themeToggle");
-const saved = localStorage.getItem("theme");
+// Theme toggle (dark default)
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
 
-if (saved === "dark") document.body.classList.add("dark");
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  document.body.classList.add("light");
+  themeIcon.textContent = "☀";
+}
 
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+  const isLight = document.body.classList.contains("light");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+  themeIcon.textContent = isLight ? "☀" : "☾";
 });
 
-// Active nav link (simple)
-const links = document.querySelectorAll(".nav__link");
-const sections = ["about","work","more"].map(id => document.getElementById(id));
+// Mobile menu
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const menuClose = document.getElementById("menuClose");
 
-const onScroll = () => {
-  const y = window.scrollY + 110;
-  let current = "about";
-  for (const s of sections) {
-    if (s && s.offsetTop <= y) current = s.id;
-  }
-  links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current));
+const openMenu = () => {
+  mobileMenu.classList.add("show");
+  mobileMenu.setAttribute("aria-hidden", "false");
+};
+const closeMenu = () => {
+  mobileMenu.classList.remove("show");
+  mobileMenu.setAttribute("aria-hidden", "true");
 };
 
-window.addEventListener("scroll", onScroll);
-onScroll();
+menuBtn?.addEventListener("click", openMenu);
+menuClose?.addEventListener("click", closeMenu);
+mobileMenu?.addEventListener("click", (e) => { if (e.target === mobileMenu) closeMenu(); });
+document.querySelectorAll(".mm__link").forEach(a => a.addEventListener("click", closeMenu));
