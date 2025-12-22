@@ -8,19 +8,16 @@
   <meta name="description" content="Venkatrao Aveti — Software Engineer (8+ years). Java, Spring Boot, Microservices, AWS, Azure, Kubernetes, Kafka, CI/CD." />
   <meta name="keywords" content="Venkatrao Aveti, Java, Spring Boot, Microservices, AWS, Azure, Kubernetes, Kafka, CI/CD, Software Engineer" />
 
-  <!-- Correct filename: styles.css -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Ambient background -->
   <div class="bg" aria-hidden="true">
     <div class="blob b1"></div>
     <div class="blob b2"></div>
     <div class="grain"></div>
   </div>
 
-  <!-- Topbar -->
   <header class="topbar">
     <div class="wrap topbar__inner">
       <a class="brand" href="#top">
@@ -31,12 +28,14 @@
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="actions">
+        <a class="btn btn-ghost" href="resume.html">ATS Resume</a>
         <a class="btn btn-ghost" href="Venkatrao_Aveti_Resume.pdf" download>Download Resume (PDF)</a>
         <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Toggle theme">
           <span id="themeIcon">☾</span>
@@ -46,7 +45,6 @@
     </div>
   </header>
 
-  <!-- Mobile menu -->
   <div id="mobileMenu" class="mm" aria-hidden="true">
     <div class="mm__panel">
       <div class="mm__head">
@@ -55,10 +53,12 @@
       </div>
       <a class="mm__link" href="#about">About</a>
       <a class="mm__link" href="#work">Work</a>
+      <a class="mm__link" href="#projects">Projects</a>
       <a class="mm__link" href="#skills">Skills</a>
       <a class="mm__link" href="#education">Education</a>
       <a class="mm__link" href="#contact">Contact</a>
       <a class="btn btn-primary" href="Venkatrao_Aveti_Resume.pdf" download>Download Resume</a>
+      <a class="btn btn-ghost" href="resume.html">ATS Resume</a>
     </div>
   </div>
 
@@ -77,13 +77,26 @@
         </h1>
 
         <p class="lead">
-          Experienced software developer with 8+ years in SDLC, specializing in Java (up to Java 21),
-          Spring Boot ecosystem, secure microservices, cloud (AWS/Azure), Kubernetes, and CI/CD automation.
+          I build backend platforms with Java + Spring Boot, event-driven systems (Kafka),
+          cloud deployments (AWS/Azure), Kubernetes, and CI/CD pipelines — optimized for reliability,
+          security, and performance.
         </p>
 
+        <!-- EMPLOYER MAGNETS -->
+        <div class="badgeRow">
+          <span class="badge">Microservices</span>
+          <span class="badge">Kafka / Event-Driven</span>
+          <span class="badge">AWS / Azure</span>
+          <span class="badge">Kubernetes (EKS/AKS)</span>
+          <span class="badge">CI/CD + DevSecOps</span>
+          <span class="badge">Observability (ELK/Datadog/Grafana)</span>
+        </div>
+
         <div class="cta">
-          <a class="btn btn-primary" href="#work">View Work</a>
+          <a class="btn btn-primary" href="#projects">Featured Projects</a>
           <a class="btn btn-ghost" href="#contact">Contact</a>
+          <!-- Optional: add your calendly link -->
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://calendly.com/">Schedule (Calendly)</a>
         </div>
 
         <div class="chips">
@@ -110,24 +123,32 @@
             <div class="row"><span>Phone</span><span class="mono">+1 (361) 688-4882</span></div>
             <div class="row"><span>Email</span><a class="mono link" href="mailto:avetivenkat@gmail.com">avetivenkat@gmail.com</a></div>
             <div class="row"><span>LinkedIn</span><a class="mono link" target="_blank" rel="noreferrer" href="https://linkedin.com/in/venkat-649105283">linkedin.com/in/venkat-649105283</a></div>
+            <div class="row"><span>GitHub</span><a class="mono link" target="_blank" rel="noreferrer" href="https://github.com/venkataveti">github.com/venkataveti</a></div>
           </div>
 
           <div class="profile__mini">
             <div class="miniStat">
-              <div class="miniStat__k">Cloud</div>
-              <div class="miniStat__v">AWS / Azure</div>
+              <div class="miniStat__k">Focus</div>
+              <div class="miniStat__v">Backend + Cloud</div>
             </div>
             <div class="miniStat">
-              <div class="miniStat__k">K8s</div>
-              <div class="miniStat__v">EKS / AKS</div>
+              <div class="miniStat__k">Strength</div>
+              <div class="miniStat__v">Reliability</div>
             </div>
             <div class="miniStat">
               <div class="miniStat__k">Security</div>
               <div class="miniStat__v">OAuth2 / JWT / RBAC</div>
             </div>
             <div class="miniStat">
-              <div class="miniStat__k">Obs</div>
-              <div class="miniStat__v">Datadog / ELK / Grafana</div>
+              <div class="miniStat__k">Ops</div>
+              <div class="miniStat__v">Dashboards + Alerts</div>
+            </div>
+          </div>
+
+          <div class="note">
+            <div class="note__k">Recruiter-friendly</div>
+            <div class="note__v">
+              View <a class="link" href="resume.html">ATS Resume</a> (text-first) or download PDF.
             </div>
           </div>
         </div>
@@ -138,7 +159,7 @@
     <section class="section" id="work">
       <div class="section__head">
         <h2>Work</h2>
-        <p>Selected experience with impact-focused bullets.</p>
+        <p>Impact-focused experience with employer-relevant skills (scale, security, delivery, ops).</p>
       </div>
 
       <!-- Optum -->
@@ -146,7 +167,7 @@
         <div class="case__head">
           <div>
             <h3>Optum (UHG) — Software Engineer</h3>
-            <div class="muted">Nov 2023 – Present • Minneapolis</div>
+            <div class="muted">Nov 2023 – Present</div>
           </div>
           <div class="tags">
             <span class="tag">Spring Boot 3.x</span>
@@ -159,29 +180,26 @@
         <div class="case__grid">
           <div>
             <p class="case__lede">
-              Engineered and maintained secure, scalable Spring Boot microservices for high-volume healthcare and financial data,
-              supporting real-time + batch processing.
+              Built secure, scalable Spring Boot microservices for high-volume healthcare workflows with reliable delivery and observability.
             </p>
+
             <ul>
-              <li>Collaborated with stakeholders/analysts to translate requirements into scalable backend + frontend solutions in Agile (Jira/Confluence).</li>
-              <li>Built Spring Boot 3.x microservices using Java 11/19, REST, JPA, and Spring Batch for real-time and batch workloads.</li>
-              <li>Implemented AWS API Gateway and integrated services with ECS/EC2, Aurora, S3, ALB, Route 53 for secure, autoscaling endpoints.</li>
-              <li>Applied event-driven architecture with Apache Kafka + Spring Kafka for decoupled async streaming.</li>
-              <li>Automated CI/CD using Jenkins + GitHub Actions with Docker + Kubernetes (EKS) supporting blue-green/canary releases.</li>
-              <li>Designed observability with Splunk/CloudWatch/Prometheus for alerting and log correlation.</li>
-              <li>Delivered Angular (v10+) UIs integrated with REST/GraphQL and state management (NgRx).</li>
-              <li>Integrated DevSecOps tools (SonarQube/Fortify/OWASP checks) and enforced secure coding + code reviews.</li>
+              <li>Designed and maintained microservices with REST, JPA, batch pipelines, and async Kafka messaging.</li>
+              <li>Automated CI/CD and production releases with Docker + Kubernetes (EKS) and quality gates (testing + scanning).</li>
+              <li>Improved monitoring & troubleshooting using logs/metrics/dashboards and alerting best practices.</li>
+              <li>Implemented secure API patterns (OAuth2/JWT, RBAC/least privilege).</li>
             </ul>
 
             <div class="stack">
-              <span class="stack__k">Environment:</span>
-              <span class="mono">Java 11/19, Spring Boot, REST, GraphQL, Kafka, PostgreSQL/Aurora, Elasticsearch, Docker, Kubernetes (EKS), Jenkins, GitHub Actions, AWS (ECS/EC2/Lambda/S3/IAM/SNS/SQS), Prometheus, Kibana, CloudWatch, OAuth2/JWT</span>
+              <span class="stack__k">Stack:</span>
+              <span class="mono">Java, Spring Boot, Kafka, PostgreSQL/Aurora, Docker, Kubernetes, AWS, CI/CD, Observability</span>
             </div>
           </div>
 
           <div class="shots">
             <figure class="shot">
-              <img src="assets/optum-1.png" alt="Optum visual" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <img src="assets/optum-1.png" alt="Optum visual"
+                   onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
               <figcaption>Optum — program / brand visual</figcaption>
             </figure>
             <figure class="shot ph">
@@ -196,12 +214,12 @@
         <div class="case__head">
           <div>
             <h3>Texas A&M University — Java Developer</h3>
-            <div class="muted">Mar 2022 – Oct 2023 • Corpus Christi, TX</div>
+            <div class="muted">Mar 2022 – Oct 2023</div>
           </div>
           <div class="tags">
             <span class="tag">Spring Boot</span>
             <span class="tag">Hibernate/JPA</span>
-            <span class="tag">AWS/Azure</span>
+            <span class="tag">Docker</span>
             <span class="tag">AKS</span>
           </div>
         </div>
@@ -209,24 +227,19 @@
         <div class="case__grid">
           <div>
             <p class="case__lede">
-              Built scalable REST APIs and full-stack workflows with strong CI/CD, observability, and security posture.
+              Built APIs and workflows with strong deployment automation and monitoring.
             </p>
             <ul>
-              <li>Developed scalable REST APIs using Spring Boot 3.x, Spring MVC, Hibernate, and JPA; improved data retrieval performance by ~25%.</li>
-              <li>Built server-side UI components using JSP + Bootstrap + Angular aligned with accessibility/WCAG standards.</li>
-              <li>Architected event-driven microservices on AWS Lambda using DynamoDB Streams + SQS for async processing.</li>
-              <li>Integrated Node.js/Express APIs for data transformation pipelines alongside Spring services.</li>
-              <li>Deployed on AWS (EC2/S3/Lambda) and Azure (App Service/Azure SQL), optimizing for cost and scalability.</li>
-              <li>Containerized services using Docker; orchestrated deployments on Kubernetes (AKS) with autoscaling and health probes.</li>
-              <li>Configured Jenkins + GitHub Actions pipelines with testing, security scanning, and multi-environment deployments.</li>
-              <li>Implemented observability with Prometheus/Grafana/CloudWatch/ELK and set up dashboards + alerts.</li>
-              <li>Mentored junior developers and TAs on Java/Spring Boot/microservices patterns.</li>
+              <li>Developed REST APIs using Spring Boot + Hibernate/JPA; improved maintainability and performance.</li>
+              <li>Containerized services with Docker; deployed on Kubernetes (AKS-style) with health checks and scaling.</li>
+              <li>Added dashboards and alerts using Grafana/Prometheus-style monitoring.</li>
             </ul>
           </div>
 
           <div class="shots">
             <figure class="shot">
-              <img src="assets/tamu-1.jpeg" alt="Texas A&M University visual" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <img src="assets/tamu-1.jpeg" alt="Texas A&M University visual"
+                   onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
               <figcaption>Texas A&M University — campus / institution</figcaption>
             </figure>
             <figure class="shot ph">
@@ -241,7 +254,7 @@
         <div class="case__head">
           <div>
             <h3>Wipro — Software Engineer</h3>
-            <div class="muted">Jul 2018 – Dec 2021 • Hyderabad, India</div>
+            <div class="muted">Jul 2018 – Dec 2021</div>
           </div>
           <div class="tags">
             <span class="tag">React</span>
@@ -254,18 +267,18 @@
         <div class="case__grid">
           <div>
             <p class="case__lede">
-              Delivered responsive web apps and reusable component systems with secure API integrations.
+              Delivered responsive web apps and reusable UI libraries with stable API integrations.
             </p>
             <ul>
-              <li>Designed and developed scalable, responsive apps using React.js, TypeScript, JavaScript, Redux, HTML/CSS, and jQuery.</li>
-              <li>Built reusable UI components and frontend libraries in React and Angular to speed up cross-team delivery.</li>
-              <li>Worked closely with backend teams to integrate secure APIs and improve overall reliability.</li>
+              <li>Built reusable components and responsive UI using React/Angular, TypeScript, Redux.</li>
+              <li>Collaborated with backend teams for secure integration and smoother releases.</li>
             </ul>
           </div>
 
           <div class="shots">
             <figure class="shot">
-              <img src="assets/wipro-1.jpeg" alt="Wipro visual" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <img src="assets/wipro-1.jpeg" alt="Wipro visual"
+                   onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
               <figcaption>Wipro — enterprise delivery</figcaption>
             </figure>
             <figure class="shot ph">
@@ -274,6 +287,66 @@
           </div>
         </div>
       </article>
+    </section>
+
+    <!-- PROJECTS (Employer Magnet) -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p>Real, scannable evidence: problem → solution → results → links.</p>
+      </div>
+
+      <div class="grid3">
+        <a class="card proj" href="projects/microservices-platform.html">
+          <div class="proj__top">
+            <div class="proj__title">Microservices Platform</div>
+            <div class="proj__tag">Case Study ↗</div>
+          </div>
+          <div class="muted">Spring Boot • PostgreSQL • Kubernetes • AWS</div>
+          <ul class="proj__bullets">
+            <li>Designed domain-based services + API contracts</li>
+            <li>Added resiliency + observability patterns</li>
+            <li>CI/CD and safe releases (blue/green/canary)</li>
+          </ul>
+        </a>
+
+        <a class="card proj" href="projects/kafka-streaming.html">
+          <div class="proj__top">
+            <div class="proj__title">Kafka Streaming Pipeline</div>
+            <div class="proj__tag">Case Study ↗</div>
+          </div>
+          <div class="muted">Kafka • Spring Kafka • Consumers • DLQ</div>
+          <ul class="proj__bullets">
+            <li>Event-driven integrations + retry/DLQ strategy</li>
+            <li>Schema + idempotency + ordering handling</li>
+            <li>Monitoring for lag and failures</li>
+          </ul>
+        </a>
+
+        <a class="card proj" href="projects/cicd-k8s.html">
+          <div class="proj__top">
+            <div class="proj__title">CI/CD + K8s Delivery</div>
+            <div class="proj__tag">Case Study ↗</div>
+          </div>
+          <div class="muted">Jenkins/GitHub Actions • Docker • K8s</div>
+          <ul class="proj__bullets">
+            <li>Build → test → scan → deploy automation</li>
+            <li>Release safety: versioning + rollbacks</li>
+            <li>Improved deployment consistency</li>
+          </ul>
+        </a>
+      </div>
+
+      <div class="callout card">
+        <div>
+          <div class="callout__k">Want more proof?</div>
+          <div class="muted">Add links to GitHub repos, demo URLs, or a short Loom video per project.</div>
+        </div>
+        <div class="callout__btns">
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://github.com/venkataveti">GitHub</a>
+          <a class="btn btn-primary" href="resume.html">ATS Resume</a>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
@@ -287,14 +360,14 @@
         <div class="card block">
           <h3>Backend</h3>
           <div class="pills">
-            <span class="pill2">Java (1.8–21)</span>
+            <span class="pill2">Java (8–21)</span>
             <span class="pill2">Spring Boot</span>
             <span class="pill2">Spring MVC</span>
             <span class="pill2">Spring Batch</span>
             <span class="pill2">Hibernate/JPA</span>
             <span class="pill2">REST</span>
             <span class="pill2">GraphQL</span>
-            <span class="pill2">gRPC</span>
+            <span class="pill2">Security</span>
           </div>
         </div>
 
@@ -308,25 +381,42 @@
             <span class="pill2">Terraform</span>
             <span class="pill2">Jenkins</span>
             <span class="pill2">GitHub Actions</span>
-            <span class="pill2">Maven/Gradle</span>
           </div>
         </div>
 
         <div class="card block">
-          <h3>Data / Security / Observability</h3>
+          <h3>Data / Observability</h3>
           <div class="pills">
             <span class="pill2">Kafka</span>
-            <span class="pill2">RabbitMQ</span>
             <span class="pill2">PostgreSQL</span>
-            <span class="pill2">MySQL</span>
             <span class="pill2">MongoDB</span>
-            <span class="pill2">OAuth2</span>
-            <span class="pill2">JWT</span>
-            <span class="pill2">RBAC</span>
-            <span class="pill2">Datadog</span>
             <span class="pill2">ELK</span>
+            <span class="pill2">Datadog</span>
             <span class="pill2">Prometheus/Grafana</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (Social Proof) -->
+    <section class="section" id="testimonials">
+      <div class="section__head">
+        <h2>Recommendations</h2>
+        <p>Replace these with real LinkedIn quotes when you have them.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card quote">
+          <div class="quote__text">“Venkat is reliable, fast at debugging, and ships clean Spring Boot services with strong ownership.”</div>
+          <div class="quote__by muted">— Colleague (replace with LinkedIn recommendation)</div>
+        </div>
+        <div class="card quote">
+          <div class="quote__text">“Strong API design skills and great production mindset — observability and rollout safety are always covered.”</div>
+          <div class="quote__by muted">— Tech Lead (replace with LinkedIn recommendation)</div>
+        </div>
+        <div class="card quote">
+          <div class="quote__text">“Great communicator and consistent delivery in Agile; handles cloud and CI/CD confidently.”</div>
+          <div class="quote__by muted">— Manager (replace with LinkedIn recommendation)</div>
         </div>
       </div>
     </section>
@@ -341,12 +431,12 @@
       <div class="grid2">
         <div class="card block">
           <h3>MS, Computer Science</h3>
-          <p class="muted">Texas A&M University, Corpus Christi, TX</p>
+          <p class="muted">Texas A&M University, Corpus Christi</p>
           <p class="mono">Jan 2022 – Aug 2023</p>
         </div>
         <div class="card block">
           <h3>BE, Computer Science</h3>
-          <p class="muted">Andhra University, Vishakhapatnam, IN</p>
+          <p class="muted">Andhra University</p>
           <p class="mono">Jun 2014 – Jul 2018</p>
         </div>
       </div>
@@ -356,7 +446,7 @@
     <section class="section" id="contact">
       <div class="section__head">
         <h2>Contact</h2>
-        <p>Fastest way to reach me.</p>
+        <p>Fastest ways to reach me.</p>
       </div>
 
       <div class="grid3">
@@ -372,33 +462,31 @@
           <div class="muted">Connect ↗</div>
         </a>
 
-        <div class="card contact">
-          <div class="contact__k">Phone</div>
-          <div class="contact__v">+1 (361) 688-4882</div>
-          <div class="muted">US</div>
-        </div>
+        <a class="card contact" target="_blank" rel="noreferrer" href="https://github.com/venkataveti">
+          <div class="contact__k">GitHub</div>
+          <div class="contact__v">@venkataveti</div>
+          <div class="muted">View repos ↗</div>
+        </a>
       </div>
 
       <footer class="footer">
         <span class="muted">© <span id="year"></span> Venkatrao Aveti</span>
         <span class="footer__links">
           <a href="#top">Top</a>
-          <a href="Venkatrao_Aveti_Resume.pdf" download>Resume</a>
+          <a href="resume.html">ATS Resume</a>
+          <a href="Venkatrao_Aveti_Resume.pdf" download>PDF</a>
         </span>
       </footer>
     </section>
 
-    <!-- ATS-only (hidden text for keyword scanning) -->
+    <!-- ATS-only -->
     <section class="sr-only" aria-hidden="false">
       <h2>Resume (ATS)</h2>
-      <p>Venkatrao Aveti. Phone +1(361)688-4882. Email avetivenkat@gmail.com. LinkedIn linkedin.com/in/venkat-649105283.</p>
-      <p>Skills: Java 1.8-21, Spring Boot, Spring MVC, Spring Batch, Spring Security, Spring Cloud, Hibernate/JPA, REST, GraphQL, Kafka, RabbitMQ, AWS, Azure, Docker, Kubernetes (EKS/AKS), Terraform, Jenkins, GitHub Actions, Datadog, ELK, Grafana, Prometheus, PostgreSQL, MySQL, MongoDB, OAuth2, JWT, RBAC.</p>
-      <p>Experience: Software Engineer Optum (Nov 2023–Present). Java Developer Texas A&M University (Mar 2022–Oct 2023). Software Engineer Wipro (Jul 2018–Dec 2021).</p>
-      <p>Education: MS Computer Science Texas A&M University Corpus Christi (Jan 2022–Aug 2023). BE Computer Science Andhra University (Jun 2014–Jul 2018).</p>
+      <p>Venkatrao Aveti. Phone +1(361)688-4882. Email avetivenkat@gmail.com. LinkedIn linkedin.com/in/venkat-649105283. GitHub github.com/venkataveti.</p>
+      <p>Skills: Java, Spring Boot, Microservices, Kafka, AWS, Azure, Kubernetes, Docker, CI/CD, Jenkins, GitHub Actions, PostgreSQL, MongoDB, REST, GraphQL, OAuth2, JWT, Observability.</p>
     </section>
   </main>
 
-  <!-- Correct filename: script.js -->
   <script src="script.js"></script>
 </body>
 </html>
