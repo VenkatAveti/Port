@@ -1,143 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venkatrao Aveti — Software Engineer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venkatrao Aveti — Work</title>
 
-  <meta name="description" content="Senior Software Engineer | Java, Spring Boot, Microservices, Cloud | Portfolio">
-  <link rel="stylesheet" href="style.css"/>
+  <!-- ATS / recruiter -->
+  <meta name="description" content="Venkatrao Aveti — Software Engineer. Java, Spring Boot, Microservices, AWS, Azure, Kubernetes, Kafka, CI/CD." />
+  <meta name="keywords" content="Java, Spring Boot, Microservices, AWS, Azure, Kubernetes, Kafka, CI/CD, Software Engineer" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Top nav (Julius-style minimal) -->
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="#top">Venkatrao Aveti</a>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav__container">
-      <a href="#" class="nav__logo">Venkatrao</a>
-      <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="themeToggle" class="nav__theme">🌙</button>
-    </div>
-  </nav>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#more">More</a>
+      </nav>
 
-  <!-- HERO -->
-  <header class="hero" id="home">
-    <div class="hero__body reveal">
-      <h1>Hello, I’m <span>Venkatrao Aveti</span></h1>
-      <p>Senior Software Engineer specializing in Java, Spring Boot, Microservices & Cloud.</p>
-      <div>
-        <a href="#projects" class="btn btn__primary">View Projects</a>
-        <a href="Venkatrao_Aveti_Resume.pdf" download class="btn btn__outline">Download Resume</a>
+      <div class="top__actions">
+        <a class="mini" href="Venkatrao_Aveti_Resume.pdf" download>Download CV</a>
+        <button id="themeToggle" class="mini mini-btn" type="button" aria-label="Toggle theme">Theme</button>
       </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <p>
-      I build scalable, cloud-native applications using modern technologies
-      like Java, Spring Boot, AWS, Azure, Kubernetes, Kafka, and CI/CD
-      pipelines. I’m passionate about clean architecture and high-performance APIs.
-    </p>
-  </section>
+  <main id="top" class="wrap">
+    <!-- Intro -->
+    <section class="intro" id="about">
+      <h1 class="h1">
+        Software Engineer<br/>
+        building scalable backend & cloud systems.
+      </h1>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section dark reveal">
-    <h2>Skills</h2>
-    <div class="skills__grid">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>Microservices</span>
-      <span>AWS</span>
-      <span>Azure</span>
-      <span>Kubernetes</span>
-      <span>Docker</span>
-      <span>CI/CD</span>
-      <span>React</span>
-      <span>Angular</span>
-      <span>PostgreSQL</span>
-      <span>MongoDB</span>
-    </div>
-  </section>
+      <div class="lead">
+        <p>
+          Hello — I’m Venkatrao. I work on Java + Spring Boot microservices, event-driven systems (Kafka),
+          cloud deployments (AWS/Azure), Kubernetes, and CI/CD. I like clean architecture, performance,
+          and reliability.
+        </p>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section reveal">
-    <h2>Projects</h2>
-    <div class="projects__grid">
+        <div class="links">
+          <a href="mailto:avetivenkat@gmail.com">Email</a>
+          <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/venkat-649105283">LinkedIn</a>
+          <a href="#work">Go to Work ↓</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="project__card">
-        <div class="project__image"></div>
-        <h3>Healthcare Microservices Platform</h3>
-        <p>Scalable microservices using Spring Boot, Kafka, & Kubernetes.</p>
-        <div class="project__links">
-          <a href="#" target="_blank">Live Demo</a>
-          <a href="#" target="_blank">Source</a>
+    <!-- Work -->
+    <section id="work" class="work">
+      <h2 class="h2">Work</h2>
+
+      <!-- OPTUM -->
+      <article class="case">
+        <div class="case__meta">
+          <h3 class="case__title">Optum (UHG)</h3>
+          <div class="case__sub">
+            <span>Software Engineer</span>
+            <span class="dot">•</span>
+            <span>Nov 2023 – Present</span>
+          </div>
+        </div>
+
+        <div class="case__body">
+          <p class="case__lede">
+            Built and maintained Spring Boot microservices for high-volume healthcare and financial workflows,
+            focusing on reliability, secure APIs, and cloud-native delivery.
+          </p>
+
+          <div class="case__cols">
+            <div>
+              <h4>What I did</h4>
+              <ul>
+                <li>Engineered Spring Boot 3.x microservices (Java 11/19) with REST and batch processing.</li>
+                <li>Implemented event-driven integration using Kafka for decoupled, async communication.</li>
+                <li>Automated CI/CD with Jenkins/GitHub Actions; containerized with Docker; deployed to EKS.</li>
+                <li>Improved observability and diagnostics using CloudWatch/Prometheus-style monitoring patterns.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Stack</h4>
+              <p class="mono">
+                Java · Spring Boot · Kafka · AWS (EKS, S3, Aurora, IAM) · Docker ·
+                PostgreSQL · CI/CD · Observability
+              </p>
+
+              <h4>Highlights</h4>
+              <ul>
+                <li>Production-focused engineering: performance, deployments, monitoring.</li>
+                <li>Security patterns: OAuth2/JWT, gateways, least-privilege access.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Image row (optional) -->
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/optum-1.jpg" alt="Optum project screenshot 1" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <figcaption>Service design & integration overview</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/optum-2.jpg" alt="Optum project screenshot 2" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <figcaption>Observability + dashboards (example)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- TAMU -->
+      <article class="case">
+        <div class="case__meta">
+          <h3 class="case__title">Texas A&M University</h3>
+          <div class="case__sub">
+            <span>Java Developer</span>
+            <span class="dot">•</span>
+            <span>Mar 2022 – Oct 2023</span>
+          </div>
+        </div>
+
+        <div class="case__body">
+          <p class="case__lede">
+            Delivered APIs and web workflows for institutional systems with emphasis on performance,
+            automated delivery, and maintainable architecture.
+          </p>
+
+          <div class="case__cols">
+            <div>
+              <h4>What I did</h4>
+              <ul>
+                <li>Built REST APIs with Spring Boot, Hibernate/JPA; improved responsiveness and maintainability.</li>
+                <li>Containerized services with Docker and deployed via Kubernetes (AKS-style pattern).</li>
+                <li>Implemented CI/CD automation; added monitoring using Grafana/Prometheus-style dashboards.</li>
+                <li>Integrated Node.js utilities for data transformation alongside Spring services.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Stack</h4>
+              <p class="mono">
+                Java · Spring Boot · Hibernate/JPA · Angular/JSP · AWS/Azure · Docker · Kubernetes ·
+                Prometheus/Grafana
+              </p>
+
+              <h4>Notes</h4>
+              <ul>
+                <li>Strong testing discipline (unit + integration) and security scanning in pipelines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/tamu-1.jpg" alt="TAMU project screenshot 1" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <figcaption>API + UI workflow snapshot</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/tamu-2.jpg" alt="TAMU project screenshot 2" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <figcaption>Deployment & CI/CD overview</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- WIPRO -->
+      <article class="case">
+        <div class="case__meta">
+          <h3 class="case__title">Wipro</h3>
+          <div class="case__sub">
+            <span>Software Engineer</span>
+            <span class="dot">•</span>
+            <span>Jul 2018 – Dec 2021</span>
+          </div>
+        </div>
+
+        <div class="case__body">
+          <p class="case__lede">
+            Built responsive web applications and backend services across enterprise projects with secure APIs,
+            modern deployment practices, and team collaboration.
+          </p>
+
+          <div class="case__cols">
+            <div>
+              <h4>What I did</h4>
+              <ul>
+                <li>Developed React/Angular UI modules with reusable components and accessibility.</li>
+                <li>Built services using Java/Spring Boot + Node.js; designed REST and GraphQL APIs.</li>
+                <li>Enabled message-driven architecture using Kafka and cloud queues/topics.</li>
+                <li>Implemented OAuth2/JWT security; improved delivery with CI/CD pipelines.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Stack</h4>
+              <p class="mono">
+                React · Angular · Java · Spring Boot · Node.js · GraphQL · Kafka · PostgreSQL/MySQL ·
+                Docker · CI/CD
+              </p>
+
+              <h4>Impact style</h4>
+              <ul>
+                <li>Modernization: monolith to services, reliability, deployment speed.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="shots">
+            <figure class="shot">
+              <img src="assets/wipro-1.jpg" alt="Wipro project screenshot 1" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <figcaption>UI component library (example)</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/wipro-2.jpg" alt="Wipro project screenshot 2" onerror="this.closest('.shot').classList.add('ph'); this.remove();" />
+              <figcaption>API security + gateway (example)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- More -->
+    <section id="more" class="more">
+      <h2 class="h2">More</h2>
+
+      <div class="more__grid">
+        <div class="box">
+          <h3>Core Skills</h3>
+          <p class="mono">
+            Java (8–21), Spring Boot, Microservices, Kafka, AWS, Azure, Kubernetes, Docker,
+            Terraform, CI/CD, SQL, PostgreSQL, MongoDB, Angular, React
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Education</h3>
+          <p>
+            MS Computer Science — Texas A&M University, Corpus Christi<br/>
+            BE Computer Science — Andhra University
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Contact</h3>
+          <p>
+            <a href="mailto:avetivenkat@gmail.com">avetivenkat@gmail.com</a><br/>
+            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/venkat-649105283">LinkedIn</a>
+          </p>
         </div>
       </div>
 
-      <div class="project__card">
-        <div class="project__image"></div>
-        <h3>University Data Management</h3>
-        <p>REST & Angular app for standardized data workflows.</p>
-        <div class="project__links">
-          <a href="#" target="_blank">Live Demo</a>
-          <a href="#" target="_blank">Source</a>
-        </div>
-      </div>
+      <footer class="foot">
+        <span>© <span id="year"></span> Venkatrao Aveti</span>
+        <span class="foot__links">
+          <a href="#top">Top</a>
+          <a href="Venkatrao_Aveti_Resume.pdf" download>Download CV</a>
+        </span>
+      </footer>
+    </section>
 
-      <div class="project__card">
-        <div class="project__image"></div>
-        <h3>Banking Web App</h3>
-        <p>Secure React app with backend API integration.</p>
-        <div class="project__links">
-          <a href="#" target="_blank">Live Demo</a>
-          <a href="#" target="_blank">Source</a>
-        </div>
-      </div>
+    <!-- ATS-only (hidden text for keyword scanning) -->
+    <section class="sr-only" aria-hidden="false">
+      <h2>Resume (ATS)</h2>
+      <p>Venkatrao Aveti — Software Engineer. Java, Spring Boot, Microservices, AWS, Azure, Kubernetes, Kafka, CI/CD, SQL, PostgreSQL, MongoDB, React, Angular.</p>
+      <p>Optum (UHG) — Software Engineer (Nov 2023–Present): Spring Boot microservices, Kafka, AWS EKS, CI/CD, monitoring.</p>
+      <p>Texas A&M University — Java Developer (Mar 2022–Oct 2023): REST APIs, Hibernate/JPA, Docker/Kubernetes, observability.</p>
+      <p>Wipro — Software Engineer (Jul 2018–Dec 2021): React/Angular, Java/Node, OAuth2/JWT, GraphQL, Kafka.</p>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section dark reveal">
-    <h2>Experience</h2>
-
-    <div class="exp__card">
-      <h3>Software Engineer — Optum (UHG)</h3>
-      <p>Nov 2023-Present</p>
-      <ul>
-        <li>Built microservices with Java & Spring Boot</li>
-        <li>Kafka event streaming & AWS EKS deployments</li>
-      </ul>
-    </div>
-
-    <div class="exp__card">
-      <h3>Java Developer — Texas A&M</h3>
-      <p>Mar 2022-Oct 2023</p>
-      <ul>
-        <li>APIs with Spring Boot & Hibernate</li>
-        <li>Angular + Observability integrations</li>
-      </ul>
-    </div>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section reveal">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:avetivenkat@gmail.com">avetivenkat@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/venkat-649105283" target="_blank">linkedin.com/in/venkat-649105283</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Venkatrao Aveti</p>
-  </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
