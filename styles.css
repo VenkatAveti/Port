@@ -1,32 +1,142 @@
-body {
+:root {
+  --bg: #f4f6f8;
+  --text: #222;
+  --card: #fff;
+  --accent: #00e6e6;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eaeaea;
+  --card: #1e1e1e;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
 }
 
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
 nav {
-  position: fixed;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
   background: #111;
-  padding: 10px;
-  text-align: center;
+  color: white;
 }
 
-nav a {
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
 }
 
-header {
-  height: 100vh;
-  background: #f4f4f4;
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-section {
-  padding: 80px 20px;
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background: var(--accent);
+  padding: 10px 18px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Sections */
+.section {
+  padding: 60px 10%;
+}
+
+.dark {
+  background: #222;
+  color: white;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid span {
+  background: var(--accent);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
 }
